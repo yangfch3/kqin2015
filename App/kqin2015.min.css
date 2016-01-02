@@ -429,6 +429,7 @@ button.swiper-pagination-bullet {
     height:100%;
     z-index: 15;
     position: relative;
+    overflow: hidden;
 }
 .swiper-slide-active .cover-img{
     position: absolute;
@@ -1114,5 +1115,8 @@ button.swiper-pagination-bullet {
     float: left;
     margin: 5%;
     width: 40%;
+}
+.swiper-slide{
+    border-bottom: none !important;
 }
 }
