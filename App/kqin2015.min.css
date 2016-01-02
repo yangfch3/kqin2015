@@ -852,6 +852,24 @@ button.swiper-pagination-bullet {
     margin-right: 200px;
     line-height: 30px
 }
+.swiper-slide-active .list-range {
+    opacity: 0;
+    position: relative;
+    -webkit-animation: beforeRaise 1s linear 1.5s forwards;
+    -o-animation: beforeRaise 1s linear 1.5s forwards;
+    animation: beforeRaise 1s linear 1.5s forwards;
+}
+@keyframes beforeRaise{
+    from{
+        opacity: 0;
+        left:-20px;
+    }
+    to{
+        opacity: 1;
+        left:0;
+    }
+
+}
 .list-range .range{
     vertical-align: middle;
 }
