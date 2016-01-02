@@ -193,8 +193,8 @@ ol, ul, li {
     height: 6px;
     display: inline-block;
     border-radius: 100%;
-    background: #000;
-    opacity: .2
+    background-color:#F00;
+    opacity: .6
 }
 button.swiper-pagination-bullet {
     border: none;
@@ -597,19 +597,19 @@ button.swiper-pagination-bullet {
 }
 .swiper-slide-active .hope-diary-left{
     opacity: 0;
-    animation: flow 0.6s linear forwards;
+    animation: flow 1s linear forwards;
 }
 .swiper-slide-active .hope-summary-left{
     opacity: 0;
-    animation: flow 0.6s linear forwards;
+    animation: flow 1s linear forwards;
 }
 .swiper-slide-active .hope-learningNotes-left{
     opacity: 0;
-    animation: flow 0.6s linear forwards;
+    animation: flow 1s linear forwards;
 }
 .swiper-slide-active .photo{
     opacity: 0;
-    animation: flow 0.6s linear forwards;
+    animation: flow 1s linear forwards;
 }
 /*.swiper-slide-active .hope-other{
     position: relative;
@@ -980,10 +980,10 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-slide-active .done .range:after{
-    animation: raise 1s ease-out forwards;
+    animation: raise 1s ease-out 1.5s forwards;
 }
 .swiper-slide-active .range:after{
-    animation: raise 1s ease-out forwards;
+    animation: raise 1s ease-out 1.5s forwards;
 }
 @keyframes raise{
     from{
@@ -1049,4 +1049,70 @@ button.swiper-pagination-bullet {
         opacity: 1;
         top:50%;
     }
+}
+@media screen and (max-width: 1023px){
+    .hope-diary-right {
+        margin-left: 50px;
+    }
+    .hope-summary-right {
+    margin-left: 50px;
+}
+.hope-learningNotes-right {
+    margin-left: 50px;
+}
+.card-display a:last-child{
+    display: none;
+}
+.book-right{
+    position: absolute;
+    opacity: 0;
+    margin-top: -90px;
+    margin-left: -80px;
+    left:50%;
+    top:50%;
+}
+.swiper-slide-active .list-range {
+    float: none;
+    margin-right: 0px;
+    opacity: 0;
+    position: relative;
+    -webkit-animation: beforeRaise 1s linear 1.5s forwards;
+    -o-animation: beforeRaise 1s linear 1.5s forwards;
+    animation: beforeRaise 1s linear 1.5s forwards;
+}
+@keyframes beforeRaise{
+    from{
+        opacity: 0;
+        left:-20px;
+    }
+    to{
+        opacity: 1;
+        left:0;
+    }
+
+}
+.swiper-slide-active .book-right{
+    -webkit-animation: o2o 1.5s ease-out forwards;
+    -o-animation: o2o 1.5s ease-out forwards;
+    animation: o2o 1.5s ease-out forwards;
+}
+    @keyframes o2o{
+        0%{
+            opacity: 0;
+        }
+        70%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+.video-card div:nth-child(7),.video-card div:nth-child(8){
+    display: none;
+}
+.grid1 {
+    float: left;
+    margin: 5%;
+    width: 40%;
+}
 }
