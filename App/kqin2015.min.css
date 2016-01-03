@@ -454,49 +454,49 @@ button.swiper-pagination-bullet {
 .bg-box01 .bg01,.bg-box01 .bg02{
     width:100%;
     height:100%;
-    background-image: url(../img/slideBg001.jpg);
+    background-image: url(http://7xppg5.com1.z0.glb.clouddn.com/img/slideBg001.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bg-box02 .bg01,.bg-box02 .bg02{
     width:100%;
     height:100%;
-    background-image: url(../img/slideBg002.jpg);
+    background-image: url(http://7xppg5.com1.z0.glb.clouddn.com/img/slideBg002.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bg-box03 .bg01,.bg-box03 .bg02{
     width:100%;
     height:100%;
-    background-image: url(../img/slideBg003.jpg);
+    background-image: url(http://7xppg5.com1.z0.glb.clouddn.com/img/slideBg003.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bg-box04 .bg01,.bg-box04 .bg02{
     width:100%;
     height:100%;
-    background-image: url(../img/slideBg004.jpg);
+    background-image: url(http://7xppg5.com1.z0.glb.clouddn.com/img/slideBg004.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bg-box05 .bg01,.bg-box05 .bg02{
     width:100%;
     height:100%;
-    background-image: url(../img/slideBg005.jpg);
+    background-image: url(http://7xppg5.com1.z0.glb.clouddn.com/img/slideBg005.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bg-box06 .bg01,.bg-box06 .bg02{
     width:100%;
     height:100%;
-    background-image: url(../img/slideBg006.jpg);
+    background-image: url(http://7xppg5.com1.z0.glb.clouddn.com/img/slideBg006.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bg-box07 .bg01,.bg-box07 .bg02{
     width:100%;
     height:100%;
-    background-image: url(../img/slideBg007.jpg);
+    background-image: url(http://7xppg5.com1.z0.glb.clouddn.com/img/slideBg007.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -814,7 +814,7 @@ button.swiper-pagination-bullet {
 .hope-learningNotes-left li{
     line-height: 36px;
     height:36px;
-    list-style-image: url(../img/listBg.png);
+    list-style-image: url(http://7xppg5.com1.z0.glb.clouddn.com/img/listBg.png);
 }
 .hope-learningNotes-left li span{
     margin-right:20px;
@@ -1189,7 +1189,6 @@ button.swiper-pagination-bullet {
 }
 .swiper-slide-active .list-range {
     float: none;
-    margin-right: 0px;
     opacity: 0;
     position: relative;
     -webkit-animation: beforeRaise 1s linear 1.5s forwards;
