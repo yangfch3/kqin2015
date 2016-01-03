@@ -438,7 +438,8 @@ button.swiper-pagination-bullet {
     margin-left: -248px;
     margin-top: -134px;
     z-index: 100;
-    animation: topRaise .7s ease-out forwards;
+    -webkit-animation: topRaise .7s ease-out forwards;
+            animation: topRaise .7s ease-out forwards;
 }
 /*[TODO]*/
 .bg-box{
@@ -505,7 +506,8 @@ button.swiper-pagination-bullet {
     left:-100%;
     top:0;
     z-index:100;
-    animation: move01 60s linear infinite;
+    -webkit-animation: move01 60s linear infinite;
+            animation: move01 60s linear infinite;
 }
 .swiper-slide-active .bg-box-slideFromLeft .bg01{
     display: block;
@@ -513,21 +515,24 @@ button.swiper-pagination-bullet {
     left:-100%;
     top:0;
     z-index:100;
-    animation: move01 60s linear infinite;
+    -webkit-animation: move01 60s linear infinite;
+            animation: move01 60s linear infinite;
 }
 .bg-box-slideFromLeft .bg02{
     display: block;
     position: absolute;
     left:0;
     top:0;
-    animation: move02 60s linear infinite;
+    -webkit-animation: move02 60s linear infinite;
+            animation: move02 60s linear infinite;
 }
 .swiper-slide-active .bg-box-slideFromLeft .bg02{
     display: block;
     position: absolute;
     left:0;
     top:0;
-    animation: move02 60s linear infinite;
+    -webkit-animation: move02 60s linear infinite;
+            animation: move02 60s linear infinite;
 }
 .bg-box-slideFromRight .bg01{
     display: block;
@@ -535,7 +540,8 @@ button.swiper-pagination-bullet {
     left:100%;
     top:0;
     z-index:100;
-    animation: move03 120s linear infinite;
+    -webkit-animation: move03 120s linear infinite;
+            animation: move03 120s linear infinite;
 }
 .swiper-slide-active .bg-box-slideFromRight .bg01{
     display: block;
@@ -543,21 +549,32 @@ button.swiper-pagination-bullet {
     left:100%;
     top:0;
     z-index:100;
-    animation: move03 120s linear infinite;
+    -webkit-animation: move03 120s linear infinite;
+            animation: move03 120s linear infinite;
 }
 .bg-box-slideFromRight .bg02{
     display: block;
     position: absolute;
     left:0;
     top:0;
-    animation: move04 120s linear infinite;
+    -webkit-animation: move04 120s linear infinite;
+            animation: move04 120s linear infinite;
 }
 .swiper-slide-active .bg-box-slideFromRight .bg02{
     display: block;
     position: absolute;
     left:0;
     top:0;
-    animation: move04 120s linear infinite;
+    -webkit-animation: move04 120s linear infinite;
+            animation: move04 120s linear infinite;
+}
+@-webkit-keyframes move01{
+    0%{
+        left:-100%;
+    }
+    100%{
+        left:0;
+    }
 }
 @keyframes move01{
     0%{
@@ -565,6 +582,14 @@ button.swiper-pagination-bullet {
     }
     100%{
         left:0;
+    }
+}
+@-webkit-keyframes move02{
+    0%{
+        left:0%;
+    }
+    100%{
+        left:100%;
     }
 }
 @keyframes move02{
@@ -575,12 +600,28 @@ button.swiper-pagination-bullet {
         left:100%;
     }
 }
+@-webkit-keyframes move03{
+    0%{
+        left:100%;
+    }
+    100%{
+        left:0;
+    }
+}
 @keyframes move03{
     0%{
         left:100%;
     }
     100%{
         left:0;
+    }
+}
+@-webkit-keyframes move04{
+    0%{
+        left:0%;
+    }
+    100%{
+        left:-100%;
     }
 }
 @keyframes move04{
@@ -598,19 +639,23 @@ button.swiper-pagination-bullet {
 }
 .swiper-slide-active .hope-diary-left{
     opacity: 0;
-    animation: flow 1s linear forwards;
+    -webkit-animation: flow 1s linear forwards;
+            animation: flow 1s linear forwards;
 }
 .swiper-slide-active .hope-summary-left{
     opacity: 0;
-    animation: flow 1s linear forwards;
+    -webkit-animation: flow 1s linear forwards;
+            animation: flow 1s linear forwards;
 }
 .swiper-slide-active .hope-learningNotes-left{
     opacity: 0;
-    animation: flow 1s linear forwards;
+    -webkit-animation: flow 1s linear forwards;
+            animation: flow 1s linear forwards;
 }
 .swiper-slide-active .photo{
     opacity: 0;
-    animation: flow 1s linear forwards;
+    -webkit-animation: flow 1s linear forwards;
+            animation: flow 1s linear forwards;
 }
 /*.swiper-slide-active .hope-other{
     position: relative;
@@ -628,6 +673,14 @@ button.swiper-pagination-bullet {
         top:0%;
     }
 }*/
+@-webkit-keyframes flow{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 @keyframes flow{
     from{
         opacity: 0;
@@ -661,7 +714,18 @@ button.swiper-pagination-bullet {
     position: relative;
 }
 .swiper-slide-active .common-right p{
-    animation: leftRaise 1.2s ease-out forwards;
+    -webkit-animation: leftRaise 1.2s ease-out forwards;
+            animation: leftRaise 1.2s ease-out forwards;
+}
+@-webkit-keyframes leftRaise{
+    from{
+        opacity: 0;
+        left:50%;
+    }
+    to{
+        opacity: 1;
+        left:0%;
+    }
 }
 @keyframes leftRaise{
     from{
@@ -681,7 +745,16 @@ button.swiper-pagination-bullet {
     font-size: 120px;
     line-height: 120px;
     opacity: 0;
-    animation: show 1s linear forwards;
+    -webkit-animation: show 1s linear forwards;
+            animation: show 1s linear forwards;
+}
+@-webkit-keyframes show{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 @keyframes show{
     from{
@@ -801,6 +874,7 @@ button.swiper-pagination-bullet {
     top:0;
     text-align: center;
     background-color: rgba(0,0,0,0);
+    -webkit-transition: background-color .5s ease-out;
     transition:background-color .5s ease-out;
 }
 .card-display span:hover{
@@ -856,8 +930,18 @@ button.swiper-pagination-bullet {
     opacity: 0;
     position: relative;
     -webkit-animation: beforeRaise 1s linear 1.5s forwards;
-    -o-animation: beforeRaise 1s linear 1.5s forwards;
     animation: beforeRaise 1s linear 1.5s forwards;
+}
+@-webkit-keyframes beforeRaise{
+    from{
+        opacity: 0;
+        left:-20px;
+    }
+    to{
+        opacity: 1;
+        left:0;
+    }
+
 }
 @keyframes beforeRaise{
     from{
@@ -999,10 +1083,20 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-slide-active .done .range:after{
-    animation: raise 1s ease-out 1.5s forwards;
+    -webkit-animation: raise 1s ease-out 1.5s forwards;
+            animation: raise 1s ease-out 1.5s forwards;
 }
 .swiper-slide-active .range:after{
-    animation: raise 1s ease-out 1.5s forwards;
+    -webkit-animation: raise 1s ease-out 1.5s forwards;
+            animation: raise 1s ease-out 1.5s forwards;
+}
+@-webkit-keyframes raise{
+    from{
+        width:0px;
+    }
+    to{
+
+    }
 }
 @keyframes raise{
     from{
@@ -1053,11 +1147,22 @@ button.swiper-pagination-bullet {
     top:0;
     text-align: center;
     background-color: rgba(0,0,0,0);
+    -webkit-transition: background-color .5s ease-out;
     transition:background-color .5s ease-out;
 }
 .video-bottom div span:hover{
     opacity: 1;
     background-color: rgba(0,0,0,0.85);
+}
+@-webkit-keyframes topRaise{
+    from{
+        opacity: 0;
+        top:60%;
+    }
+    to{
+        opacity: 1;
+        top:50%;
+    }
 }
 @keyframes topRaise{
     from{
@@ -1088,8 +1193,18 @@ button.swiper-pagination-bullet {
     opacity: 0;
     position: relative;
     -webkit-animation: beforeRaise 1s linear 1.5s forwards;
-    -o-animation: beforeRaise 1s linear 1.5s forwards;
     animation: beforeRaise 1s linear 1.5s forwards;
+}
+@-webkit-keyframes beforeRaise{
+    from{
+        opacity: 0;
+        left:-20px;
+    }
+    to{
+        opacity: 1;
+        left:0;
+    }
+
 }
 @keyframes beforeRaise{
     from{
@@ -1112,9 +1227,19 @@ button.swiper-pagination-bullet {
 }
 .swiper-slide-active .book-right{
     -webkit-animation: o2o 1.5s ease-out forwards;
-    -o-animation: o2o 1.5s ease-out forwards;
     animation: o2o 1.5s ease-out forwards;
 }
+    @-webkit-keyframes o2o{
+        0%{
+            opacity: 0;
+        }
+        70%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
     @keyframes o2o{
         0%{
             opacity: 0;
@@ -1147,7 +1272,18 @@ button.swiper-pagination-bullet {
     margin-left: -25%;
     margin-top: 0px;
     z-index: 100;
-    animation: littleTopRaise .7s ease-out forwards;
+    -webkit-animation: littleTopRaise .7s ease-out forwards;
+            animation: littleTopRaise .7s ease-out forwards;
+}
+@-webkit-keyframes littleTopRaise{
+    from{
+        opacity: 0;
+        top:60%;
+    }
+    to{
+        opacity: 1;
+        top:30%;
+    }
 }
 @keyframes littleTopRaise{
     from{
@@ -1166,11 +1302,15 @@ button.swiper-pagination-bullet {
     display: none;
 }
 .hope-other{
-    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+            transform: scale(0.6);
 }
 .list-range{
     width: 580px;
-    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+            transform: scale(0.5);
 }
 .list-range li{
     line-height: 190%;
@@ -1212,6 +1352,8 @@ button.swiper-pagination-bullet {
 }
 @media screen and (max-width: 480px) {
 .swiper-slide-active .cover-img {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
 }
 }
