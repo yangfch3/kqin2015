@@ -1082,14 +1082,6 @@ button.swiper-pagination-bullet {
 .card-display a:last-child{
     display: none;
 }
-.book-right{
-    position: absolute;
-    opacity: 0;
-    margin-top: -90px;
-    margin-left: -80px;
-    left:50%;
-    top:50%;
-}
 .swiper-slide-active .list-range {
     float: none;
     margin-right: 0px;
@@ -1109,6 +1101,14 @@ button.swiper-pagination-bullet {
         left:0;
     }
 
+}
+.book-right{
+    position: absolute;
+    opacity: 0;
+    margin-top: -90px;
+    margin-left: -80px;
+    left:50%;
+    top:50%;
 }
 .swiper-slide-active .book-right{
     -webkit-animation: o2o 1.5s ease-out forwards;
@@ -1136,5 +1136,82 @@ button.swiper-pagination-bullet {
 }
 .swiper-slide{
     border-bottom: none !important;
+}
+}
+@media  screen and (max-width: 720px) {
+.swiper-slide-active .cover-img {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 50%;
+    margin-left: -25%;
+    margin-top: 0px;
+    z-index: 100;
+    animation: littleTopRaise .7s ease-out forwards;
+}
+@keyframes littleTopRaise{
+    from{
+        opacity: 0;
+        top:60%;
+    }
+    to{
+        opacity: 1;
+        top:30%;
+    }
+}
+.swiper-slide-active .cover-img img{
+    width: 100%;
+}
+.video-bottom,.photo,.hope-diary-left,.hope-summary-left,.hope-learningNotes-left {
+    display: none;
+}
+.hope-other{
+    transform: scale(0.6);
+}
+.list-range{
+    width: 580px;
+    transform: scale(0.5);
+}
+.list-range li{
+    line-height: 190%;
+}
+.minions {
+    float: left;
+    margin-right: 30px;
+    margin-left: 0px;
+}
+.hope-other {
+    margin-right: -40px;
+}
+.hope-exercise-text .right {
+    float: none;
+    line-height: 36px;
+    margin-top: 0;
+    margin-left: 0;
+}
+.hope-exercise-text .left {
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+.hope-exercise-text .left,.right p{
+    text-align: center;
+}
+.hope-learningNotes-right,.hope-summary-right,.hope-diary-right {
+    float: none;
+    margin-left: 0px;
+    margin-top: 0px;
+    left: 0px;
+}
+.hope-diary-right p{
+    margin-top: 0px
+}
+.swiper-slide-active .common-right p span {
+    font-size: 100px;
+}
+}
+@media screen and (max-width: 480px) {
+.swiper-slide-active .cover-img {
+    transform: scale(1.5);
 }
 }
