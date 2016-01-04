@@ -689,7 +689,7 @@ button.swiper-pagination-bullet {
         opacity: 1;
     }
 }
-.hope-diary-left a{
+.hope-diary-left span{
     display: block;
     line-height: 180%;
     border-top:1px solid #fff;
@@ -707,6 +707,9 @@ button.swiper-pagination-bullet {
     margin-top: 30px;
     padding-top: 3px !important;
     border-radius: 4px;
+}
+.hope-diary-left-more:hover{
+    border-color:#3ad5e3;
 }
 .common-right p{
     font-size: 24px;
