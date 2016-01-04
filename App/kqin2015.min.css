@@ -1312,9 +1312,9 @@ button.swiper-pagination-bullet {
         -ms-transform: scale(0.5);
             transform: scale(0.5);
 }
-.list-range{
+.list-range ul{
     position: relative;
-    left: 0;
+    left: -50%;
 }
 .swiper-slide-active .list-range{
     width: 580px;
