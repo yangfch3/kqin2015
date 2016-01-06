@@ -29,7 +29,7 @@ a, a:link, a:visited {
   color: #fff;
 }
 a:hover {
-  color: #fff;
+  color: #3ad5e3;
 }
 :link,
 :visited {
@@ -421,7 +421,7 @@ button.swiper-pagination-bullet {
     position: absolute;
     width:100%;
     height:100%;
-    background:rgba(0,0,0,0.85);
+    background:rgba(0,0,0,0.65);
     z-index: 50
 }
 .cover-box{
@@ -689,7 +689,7 @@ button.swiper-pagination-bullet {
         opacity: 1;
     }
 }
-.hope-diary-left a{
+.hope-diary-left span{
     display: block;
     line-height: 180%;
     border-top:1px solid #fff;
@@ -698,7 +698,7 @@ button.swiper-pagination-bullet {
 }
 .hope-diary-left-more{
     font-size: 18px;
-    line-height: 54px;
+    line-height: 35px;
     width: 70px;
     text-align: center;
     display: block;
@@ -707,6 +707,9 @@ button.swiper-pagination-bullet {
     margin-top: 30px;
     padding-top: 3px !important;
     border-radius: 4px;
+}
+.hope-diary-left-more:hover{
+    border-color:#3ad5e3;
 }
 .common-right p{
     font-size: 24px;
@@ -929,8 +932,8 @@ button.swiper-pagination-bullet {
 .swiper-slide-active .list-range {
     opacity: 0;
     position: relative;
-    -webkit-animation: beforeRaise 1s linear 1.5s forwards;
-    animation: beforeRaise 1s linear 1.5s forwards;
+    -webkit-animation: beforeRaise 1s linear 0.8s forwards;
+    animation: beforeRaise 1s linear 0.8s forwards;
 }
 @-webkit-keyframes beforeRaise{
     from{
@@ -1083,12 +1086,12 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-slide-active .done .range:after{
-    -webkit-animation: raise 1s ease-out 1.5s forwards;
-            animation: raise 1s ease-out 1.5s forwards;
+    -webkit-animation: raise 1s ease-out 0.8s forwards;
+            animation: raise 1s ease-out 0.8s forwards;
 }
 .swiper-slide-active .range:after{
-    -webkit-animation: raise 1s ease-out 1.5s forwards;
-            animation: raise 1s ease-out 1.5s forwards;
+    -webkit-animation: raise 1s ease-out 0.8s forwards;
+            animation: raise 1s ease-out 0.8s forwards;
 }
 @-webkit-keyframes raise{
     from{
@@ -1191,8 +1194,8 @@ button.swiper-pagination-bullet {
     float: none;
     opacity: 0;
     position: relative;
-    -webkit-animation: beforeRaise 1s linear 1.5s forwards;
-    animation: beforeRaise 1s linear 1.5s forwards;
+    -webkit-animation: beforeRaise 1s linear 0.8s forwards;
+    animation: beforeRaise 1s linear 0.8s forwards;
 }
 @-webkit-keyframes beforeRaise{
     from{
@@ -1307,6 +1310,18 @@ button.swiper-pagination-bullet {
 }
 .list-range{
     width: 580px;
+    margin-right: 0px !important;
+    -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+            transform: scale(0.5);
+}
+.list-range ul{
+    position: relative;
+    left: -50%;
+}
+.swiper-slide-active .list-range{
+    width: 580px;
+    margin-right: 0px !important;
     -webkit-transform: scale(0.5);
         -ms-transform: scale(0.5);
             transform: scale(0.5);
