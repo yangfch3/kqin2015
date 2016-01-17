@@ -801,7 +801,7 @@ button.swiper-pagination-bullet {
 
 .hope-learningNotes-left{
     float:left;
-    width:434px;
+    /*width:434px;*/
 }
 .hope-learningNotes-right{
     float:right;
