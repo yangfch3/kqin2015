@@ -983,7 +983,7 @@ button.swiper-pagination-bullet {
     display: inline-block;
 
     position: relative;
-    top: -16px;
+    top: -14px;
 
     margin-right: 20px;
 
@@ -994,7 +994,7 @@ button.swiper-pagination-bullet {
     display: inline-block;
 
     position: relative;
-    top: -19px;
+    top: -16px;
 
     line-height: 36px;
     vertical-align: middle;
